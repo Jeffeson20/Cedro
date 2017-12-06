@@ -1,0 +1,30 @@
+﻿@using Cedro.Model
+@model List<Computadores>
+
+<h3>Lista de Produtos</h3>
+<p>Quantidade de computadores cadastrados = @Model.Count</p>
+
+
+<table border="1">
+
+    <tr>
+        <th>Nome</th>
+        <th>Especificações</th>
+        <th>Preço</th>
+    </tr>
+    
+    @foreach (var computadores in Model)
+    {
+
+    <tr>
+        <td>@computadores.nome</td>
+        <td>@computadores.especificacao</td>
+        <td>@computadores.preco</td>
+        
+    </tr>
+
+    }
+
+
+</table>
+

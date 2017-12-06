@@ -1,0 +1,11 @@
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\bin\Debug\netcoreapp2.0\Cedro.deps.json
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\bin\Debug\netcoreapp2.0\Cedro.runtimeconfig.json
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\bin\Debug\netcoreapp2.0\Cedro.runtimeconfig.dev.json
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\bin\Debug\netcoreapp2.0\Cedro.dll
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\bin\Debug\netcoreapp2.0\Cedro.pdb
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\obj\Debug\netcoreapp2.0\Cedro.csprojResolveAssemblyReference.cache
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\obj\Debug\netcoreapp2.0\Cedro.csproj.CoreCompileInputs.cache
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\obj\Debug\netcoreapp2.0\Cedro.AssemblyInfoInputs.cache
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\obj\Debug\netcoreapp2.0\Cedro.AssemblyInfo.cs
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\obj\Debug\netcoreapp2.0\Cedro.dll
+C:\Users\jeffe\source\repos\Cedro2.0\Cedro\Cedro\obj\Debug\netcoreapp2.0\Cedro.pdb

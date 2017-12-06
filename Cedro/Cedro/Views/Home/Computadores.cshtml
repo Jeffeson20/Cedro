@@ -1,0 +1,29 @@
+﻿@using Cedro.Model
+@model Computadores
+
+<h3>Computadores</h3>
+
+<form asp-controller="Home" asp-action="Computadores">
+
+    <div asp-validation-summary="ModelOnly"></div>
+
+    <div class="form-group">
+        <label for="nome">Nome do Computador: </label>
+        <input class="form-control" asp-for="nome" /><br />
+        <span asp-validation-for="nome"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="nome">Especificações: </label>
+        <input class="form-control" asp-for="especificacao" /><br />
+        <span asp-validation-for="especificacao"></span>
+    </div>  
+    
+    <div class="form-group">
+        <label for="nome">Preço: </label>
+        <input class="form-control" asp-for="preco" /><br />
+        <span asp-validation-for="preco"></span>
+    </div>
+
+    <button type="submit">Salvar</button>
+</form>
