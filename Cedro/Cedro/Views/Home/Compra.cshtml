@@ -1,0 +1,34 @@
+﻿@model Cedro.Model.Computadores
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Comprar Produto</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.min.css">
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+</head>
+<body>
+    <div>
+        <h2><b>COMPRAR PRODUTO</b></h2>
+        <hr />
+        <div class="cardProduto" style="width:50%">
+            <form method="POST">
+                <img class="img-thumbnail" src=@Html.DisplayFor(modelproduto => modelproduto.imagem)
+                     alt="Avatar" style=" width:400px; height:250px; display:block; margin:auto;">
+                <h4 style="margin:5px"> <b>Nome:</b> @Html.DisplayFor(modelproduto => modelproduto.nome)</h4>
+                <h4 style="margin:5px"> <b>Preço:</b> R$ @Html.DisplayFor(modelproduto => modelproduto.preco)</h4>
+                <input type="hidden" id="valorProduto" value="@Html.DisplayFor(model => model.preco)" disabled>
+                <div>
+                    <input type="button" class="btn btn-default" onclick="avistacomdesconto(valorProduto)" value="BOLETO" style="background-color:#000000; color:#ffffff" />
+                    <input type="button" class="btn btn-default" onclick="avista(valorProduto)" value="CARTÃO A VISTA" style="background-color:#000000; color:#ffffff">
+                    <input type="button" class="btn btn-default" onclick="aprazo(valorProduto)" value="CARTÃO PARCELADO" style="background-color:#000000; color:#ffffff">
+                    <a asp-action="Index" class="btn btn-default" style="margin:3px; background-color:#000000; color:#ffffff "> VOLTAR </a>
+                </div>
+                <div id="inputParcelas">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

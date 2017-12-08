@@ -22,6 +22,8 @@ namespace Cedro.Model
         [Required(ErrorMessage = "Informe o Nome")]
         public String nome { get; set; }
 
+
+
         public String imagem { get; set; }
     }
 }

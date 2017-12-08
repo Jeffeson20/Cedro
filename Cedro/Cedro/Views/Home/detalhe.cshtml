@@ -1,0 +1,31 @@
+﻿@model Cedro.Model.Computadores
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.min.css">
+</head>
+<body>
+    <div>
+        <h2><b>DETALHES DO PRODUTO</b></h2>
+        <hr />
+        <div class="cardProduto">
+            <img class="img-thumbnail" src=@Html.DisplayFor(modelproduto => modelproduto.imagem)
+                 alt="Avatar" style=" width:400px; height:250px; display:block; margin:auto;">
+            <h4 style="margin:5px"> <b>NOME: </b> @Html.DisplayFor(modelproduto => modelproduto.nome)</h4>
+            <h4 style="margin:5px"> <b>PREÇO: </b> R$ @Html.DisplayFor(modelproduto => modelproduto.preco)</h4>
+            <h4 style="margin:5px"> <b>DESCRIÇÃO: </b> @Html.DisplayFor(modelproduto => modelproduto.especificacao)</h4>
+            <div>
+                <form asp-action="DetalharProduto">
+                    <div class="form-group">
+                        <input asp-for="Id" type="hidden" class="form-control" />
+                        <span asp-validation-for="Id" class="text-danger"></span>
+                    </div>
+                    <a asp-action="Index" class="btn btn-default" style="margin:3px; background-color:#000000; color:#ffffff"> VOLTAR </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

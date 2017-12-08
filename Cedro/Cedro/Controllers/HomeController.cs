@@ -29,6 +29,7 @@ namespace Cedro.Controllers
                 var Repositorio = new Repositorio();
                 Repositorio.cadastre(computadores);
                 //ele redireciona pra outro lugar diferente do else, no caso para a lista
+                
                 return RedirectToAction(nameof(Lista));
                 //nameof permite que mesmo eu alterando a palavra lista do public a baixo esse lista do return si altere junto
             }
@@ -47,7 +48,18 @@ namespace Cedro.Controllers
         }
 
 
+
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Compra()
+        {
+            return View();
+        }
+
+        public IActionResult detalhe()
         {
             return View();
         }
